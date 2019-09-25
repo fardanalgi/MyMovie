@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <ImageView
+            android:id="@+id/detailGambar_id"
+            android:layout_width="180dp"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/detailNama_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginStart="190dp"
+            android:text="@string/nama"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailRilis_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailNama_id"
+            android:layout_marginLeft="190dp"
+            android:layout_marginStart="190dp"
+            android:text="@string/rilis" />
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/overview"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detailDeskripsi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/deskripsi"
+        android:textSize="17sp" />
+
+</LinearLayout>
